@@ -1,0 +1,24 @@
+{% if pause_position.x is not none %}
+; relative extruder
+M83
+
+; prime nozzle
+G1 E-5 F4500
+G1 E5 F4500
+G1 E5 F4500
+
+; absolute E
+M82
+
+; absolute XYZ
+G90
+
+; Reinicia o extrusor
+G92 E{{ pause_position.e }}
+
+; MOVE X/Y/Z para posição que foi acionado o pause
+G1 X{{ pause_position.x }} Y{{ pause_position.y }} Z{{ pause_position.z }} F4500
+
+; volta o valor de fluxo de extrusão
+{% if pause_position.f is not none %}G1 F{{ pause_position.f }}{% endif %}
+{% endif %}

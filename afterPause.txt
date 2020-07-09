@@ -1,0 +1,15 @@
+{% if pause_position.x is not none %}
+; relative XYZE
+G91
+M83
+
+; pequena retração no filamento  filament, move Z um pouco para cima
+G1 Z+5 E-5 F4500
+
+; absolute XYZE
+M82
+G90
+
+; move X/Y para uma posição segura, se necessário ajustar os valores
+G1 X0 Y0
+{% endif %}
