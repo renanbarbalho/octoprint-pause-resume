@@ -1,4 +1,4 @@
-### CONFIGURAÇÃO PAUSE/RESUME IMPRESSÃO NO OCTOPRINT  
+## CONFIGURAÇÃO PAUSE/RESUME IMPRESSÃO NO OCTOPRINT  
 
 Essa configuração irá ajudar para que você possa pausar o seu processo de forma segura, ou seja,
 o hotend não ficará sobre a peça, ele irá ser levado a um local seguro.  
@@ -12,7 +12,7 @@ Com essa configuração é possível você efetuar a troca do filamento sem prec
 Feito isso é só usar o pause/resume.  
 
 
-Autor: Renan Barbalho
-E-mail: renanbarbalho@gmail.com
+**Autor:** Renan Barbalho  
+**E-mail:** renanbarbalho@gmail.com
 
 
